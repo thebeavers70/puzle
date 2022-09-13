@@ -1,0 +1,15 @@
+def currency():
+    bitprice = input("What is BitCoin price today?: ")
+    if bitprice.isdigit():
+        moneysum = input("How much $ do you have?: ")
+        if moneysum.isdigit():
+           youcanbuy = int(bitprice) / int(moneysum)
+           print("You can buy ", youcanbuy, "BTC")
+        else:
+            print("Something went wrong!")
+
+    else:
+        print("Something went wrong!")
+
+
+currency()
